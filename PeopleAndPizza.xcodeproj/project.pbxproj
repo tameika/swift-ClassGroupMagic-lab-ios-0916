@@ -12,18 +12,7 @@
 		5B077DDF1D9C519B003DCE37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B077DDD1D9C519B003DCE37 /* Main.storyboard */; };
 		5B077DE11D9C519B003DCE37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B077DE01D9C519B003DCE37 /* Assets.xcassets */; };
 		5B077DE41D9C519B003DCE37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B077DE21D9C519B003DCE37 /* LaunchScreen.storyboard */; };
-		5B077DEF1D9C519B003DCE37 /* PeopleAndPizzaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B077DEE1D9C519B003DCE37 /* PeopleAndPizzaTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5B077DEB1D9C519B003DCE37 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B077DCE1D9C519B003DCE37 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B077DD51D9C519B003DCE37;
-			remoteInfo = PeopleAndPizza;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		5B077DD61D9C519B003DCE37 /* PeopleAndPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeopleAndPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,20 +22,10 @@
 		5B077DE01D9C519B003DCE37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B077DE31D9C519B003DCE37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B077DE51D9C519B003DCE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B077DEA1D9C519B003DCE37 /* PeopleAndPizzaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeopleAndPizzaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B077DEE1D9C519B003DCE37 /* PeopleAndPizzaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAndPizzaTests.swift; sourceTree = "<group>"; };
-		5B077DF01D9C519B003DCE37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5B077DD31D9C519B003DCE37 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B077DE71D9C519B003DCE37 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -60,7 +39,6 @@
 			isa = PBXGroup;
 			children = (
 				5B077DD81D9C519B003DCE37 /* PeopleAndPizza */,
-				5B077DED1D9C519B003DCE37 /* PeopleAndPizzaTests */,
 				5B077DD71D9C519B003DCE37 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,12 +47,19 @@
 			isa = PBXGroup;
 			children = (
 				5B077DD61D9C519B003DCE37 /* PeopleAndPizza.app */,
-				5B077DEA1D9C519B003DCE37 /* PeopleAndPizzaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
 		5B077DD81D9C519B003DCE37 /* PeopleAndPizza */ = {
+			isa = PBXGroup;
+			children = (
+				5B4F927E1D9C533B00B9360D /* Supporting Files */,
+			);
+			path = PeopleAndPizza;
+			sourceTree = "<group>";
+		};
+		5B4F927E1D9C533B00B9360D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
 				5B077DD91D9C519B003DCE37 /* AppDelegate.swift */,
@@ -84,16 +69,7 @@
 				5B077DE21D9C519B003DCE37 /* LaunchScreen.storyboard */,
 				5B077DE51D9C519B003DCE37 /* Info.plist */,
 			);
-			path = PeopleAndPizza;
-			sourceTree = "<group>";
-		};
-		5B077DED1D9C519B003DCE37 /* PeopleAndPizzaTests */ = {
-			isa = PBXGroup;
-			children = (
-				5B077DEE1D9C519B003DCE37 /* PeopleAndPizzaTests.swift */,
-				5B077DF01D9C519B003DCE37 /* Info.plist */,
-			);
-			path = PeopleAndPizzaTests;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,24 +92,6 @@
 			productReference = 5B077DD61D9C519B003DCE37 /* PeopleAndPizza.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5B077DE91D9C519B003DCE37 /* PeopleAndPizzaTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B077DF61D9C519B003DCE37 /* Build configuration list for PBXNativeTarget "PeopleAndPizzaTests" */;
-			buildPhases = (
-				5B077DE61D9C519B003DCE37 /* Sources */,
-				5B077DE71D9C519B003DCE37 /* Frameworks */,
-				5B077DE81D9C519B003DCE37 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B077DEC1D9C519B003DCE37 /* PBXTargetDependency */,
-			);
-			name = PeopleAndPizzaTests;
-			productName = PeopleAndPizzaTests;
-			productReference = 5B077DEA1D9C519B003DCE37 /* PeopleAndPizzaTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -148,12 +106,6 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = KXY9EDFTF5;
 						ProvisioningStyle = Automatic;
-					};
-					5B077DE91D9C519B003DCE37 = {
-						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = KXY9EDFTF5;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 5B077DD51D9C519B003DCE37;
 					};
 				};
 			};
@@ -171,7 +123,6 @@
 			projectRoot = "";
 			targets = (
 				5B077DD51D9C519B003DCE37 /* PeopleAndPizza */,
-				5B077DE91D9C519B003DCE37 /* PeopleAndPizzaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,13 +138,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B077DE81D9C519B003DCE37 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -206,23 +150,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B077DE61D9C519B003DCE37 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B077DEF1D9C519B003DCE37 /* PeopleAndPizzaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		5B077DEC1D9C519B003DCE37 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B077DD51D9C519B003DCE37 /* PeopleAndPizza */;
-			targetProxy = 5B077DEB1D9C519B003DCE37 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		5B077DDD1D9C519B003DCE37 /* Main.storyboard */ = {
@@ -361,36 +289,6 @@
 			};
 			name = Release;
 		};
-		5B077DF71D9C519B003DCE37 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = KXY9EDFTF5;
-				INFOPLIST_FILE = PeopleAndPizzaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.PeopleAndPizzaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleAndPizza.app/PeopleAndPizza";
-			};
-			name = Debug;
-		};
-		5B077DF81D9C519B003DCE37 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = KXY9EDFTF5;
-				INFOPLIST_FILE = PeopleAndPizzaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.PeopleAndPizzaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeopleAndPizza.app/PeopleAndPizza";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -410,14 +308,7 @@
 				5B077DF51D9C519B003DCE37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		5B077DF61D9C519B003DCE37 /* Build configuration list for PBXNativeTarget "PeopleAndPizzaTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B077DF71D9C519B003DCE37 /* Debug */,
-				5B077DF81D9C519B003DCE37 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
